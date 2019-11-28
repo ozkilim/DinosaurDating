@@ -1,5 +1,6 @@
 from datetime import date
 
+import urllib3
 from django.http import response
 from django.http import request
 from django.shortcuts import render, redirect
