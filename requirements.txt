@@ -1,6 +1,5 @@
 cmake==0.9.0
 cycler==0.10.0
-Django==1.11.8
 image==1.5.27
 imutils==0.5.3
 kiwisolver==1.1.0
