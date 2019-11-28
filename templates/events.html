@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <h1>all upcoming events</h1>
+                {% for event in events %}
+                    <div id="eventbox">
+                        <img src="static/images/{{ event.image }}" id="event-image">
+
+                        <h2>WHAT? {{ event.name }}</h2>
+
+                        <h2>WHEN? {{ event.date }}</h2>
+
+                        <h2>WHERE? {{ event.location }}</h2>
+                        {% load staticfiles %}
+
+                        <h2>HOW? </h2>
+                        <p>{{ event.description }}</p>
+
+
+                    Get your tickets her!--->
+                    <a href="/tickets/{{ event.id }}">Get tickets to {{ event.name }}</a>
+
+                    </div>
+                    <br>
+                {% endfor %}
+                <h1>past events</h1>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <br>
+                {{ event_name }}
+                {{ event_date }}
+                {{ event_location }}
+
+                event pricing----->{{ event_price }}NIS
+                        <img src="static/images/{{ event.image }}">
+
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                    <br>
+                    <input type="submit" value="Submit" class="customfoodaddbutton" onclick="document.getElementsByClassName('stripe-button-el')[0].click()">
+                </form>
+
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+                    <img src="static/images/how-it-works.pdf" id="how-it-works-img">
+    </div>
+
+
+
+{% endblock %}

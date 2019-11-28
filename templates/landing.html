@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{#                <img src="static/images/Dinosaur.png" id="logo">#}
+{#        <br>#}
+    <h1 id="landing_title">Dinosaur dating events</h1>
+    <br>
+
+    <br>
+                <img src="static/images/Dinosaur-2.pdf" id="how-img">
+                 <img src="static/images/Dinosaur-3.pdf"id="rules-img">
+<br>
+             <h2 id="speed-dating-tagline">We are changing the dating scene in TEl-AVIV.
+                    We believe that getting out of your comfort zone and meeting people in real
+                    life is a more enjoyable experience than online dating. We are giving you the
+                    opportunity to experience a huge variety of creative dating events and meet all kinds of people
+                    join us at our next event</h2>
+                                <a id="call-to-action" type="submit" href="{% url 'mainsite:events' %}">See our upcoming events!</a>
+
+{% endblock %}

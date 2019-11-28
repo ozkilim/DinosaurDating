@@ -1,0 +1,207 @@
+#navbarNavAltMarkup{
+    color: white;
+    background-color: transparent;
+}
+
+h1{
+    color: blue;
+        text-align: center!important;
+}
+
+@font-face {
+    font-family:'Bungee';
+    src: url('../font/Bungee.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family:Bungee!important;
+    color: deeppink!important;
+
+}
+/*mobile*/
+@media (max-width: 520px) {
+
+    #wrapper{
+        overflow-x: hidden;
+        position: relative
+    }
+
+    body{
+    font-family:Bungee!important;
+    color: deeppink!important;
+    }
+    #speed-dating-title {
+
+        font-size: 90px;
+        font-weight: 60px;
+        color: #e98d38;
+
+    }
+
+    #event-image{
+        width: 300px;
+    }
+
+    #speed-dating-tagline {
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        top: 670px;
+        width: 1100px;
+        left: 150px;
+    }
+
+    #speed-dating-para {
+        visibility: hidden;
+    }
+
+
+    #eventbox {
+        color: black;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 10px;
+        padding: 40px;
+        outline: black;
+        background-color: white;
+        text-align: center;
+    }
+
+    img {
+        position: center;
+    }
+
+    #call-to-action {
+        color: deeppink;
+        font-size: 80px;
+
+    }
+
+    #logo {
+        position: relative;
+        width: 200px;
+    }
+
+    #speed-dating-tagline{
+            text-align: center;
+    }
+
+    #how-img {
+        width: 400px;
+    }
+
+    #rules-img {
+        width: 400px;
+        position: relative;
+    }
+
+    #landing_title {
+        text-align: center;
+        font-size: 65px;
+        font-weight: bolder;
+        color: deeppink;
+    }
+
+    #how-it-works-img {
+        width: 400px;
+    }
+
+    #icon-img {
+        width: 50px;
+    }
+
+    #form {
+        width: 50px;
+    }
+}
+
+/*pc*/
+@media (min-width: 521px) {
+
+    #speed-dating-title {
+        /*position: relative;*/
+        /*left: px;*/
+        text-align: center;
+
+        font-size: 90px;
+        font-weight: 100;
+        color: #e98d38;
+
+    }
+
+    #speed-dating-tagline {
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        top: 670px;
+        width: 1100px;
+        left: 150px;
+    }
+
+    #speed-dating-para {
+        visibility: hidden;
+    }
+
+
+    #eventbox {
+        color: black;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 10px;
+        padding: 40px;
+        outline: black;
+        background-color: white;
+        text-align: center;
+    }
+
+    img {
+        position: center;
+    }
+
+    #call-to-action {
+        color: deeppink;
+        font-size: 80px;
+        position: relative;
+        top: 710px;
+    }
+
+    #logo {
+        position: relative;
+
+        width: 200px;
+
+    }
+
+    #how-img {
+        position: relative;
+        left: 375px;
+    }
+
+    #rules-img {
+        position: relative;
+        top: 840px;
+        right: 240px;
+    }
+
+    #landing_title {
+        text-align: center;
+        font-size: 65px;
+        font-weight: bolder;
+        color: deeppink;
+    }
+
+    #how-it-works-img {
+        position: relative;
+        right: 30px;
+    }
+
+    #icon-img {
+        width: 50px;
+    }
+
+    #form {
+        width: 50px;
+    }
+}
