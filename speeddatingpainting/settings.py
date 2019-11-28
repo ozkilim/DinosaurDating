@@ -25,7 +25,8 @@ SECRET_KEY = '-*6-q2()sm(as6e*g$#jos9gvr0oxlnz*!cv*qias#*7ja^^eh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dinosaurdating.herokuapp.com']
 
 
 # Application definition
