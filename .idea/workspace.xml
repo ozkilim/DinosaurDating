@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95324bb-2f18-4583-8d73-5dd2071994d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speeddatingpainting/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/speeddatingpainting/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +129,7 @@
       <workItem from="1574940036263" duration="909000" />
       <workItem from="1574948139614" duration="711000" />
       <workItem from="1574950062514" duration="1610000" />
-      <workItem from="1574952012193" duration="20000" />
+      <workItem from="1574952012193" duration="326000" />
     </task>
     <servers />
   </component>
