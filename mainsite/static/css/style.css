@@ -46,7 +46,8 @@ body{
     }
 
     #event-image{
-        width: 300px;
+        width: 100%;
+        height: auto;
     }
 
     #speed-dating-tagline {
@@ -208,5 +209,9 @@ body{
 
     #form {
         width: 50px;
+    }
+    #event-image{
+        width: 90%;
+        height: auto;
     }
 }
