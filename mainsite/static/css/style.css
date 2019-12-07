@@ -20,6 +20,11 @@ body{
     color: deeppink!important;
 
 }
+
+.asteriskField {
+    display: none;
+}
+
 /*mobile*/
 @media (max-width: 520px) {
 

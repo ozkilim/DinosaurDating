@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load crispy_forms_tags %}
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-1">
             </div>
-            <div class="col-6">
+            <div class="col-10">
                 <br>
                 {{ event_name }}
                 {{ event_date }}
@@ -12,19 +13,18 @@
 
                 event pricing----->{{ event_price }}NIS
                         <img src="static/images/{{ event.image }}">
-
+        <h1>fill out some quick info before you pay so we can give you the best experience at our event!</h1>
                 <form action="" method="post">
                     {% csrf_token %}
-                    {{ form.as_table }}
+                    {{ form|crispy }}
                     <br>
                     <input type="submit" value="Submit" class="customfoodaddbutton" onclick="document.getElementsByClassName('stripe-button-el')[0].click()">
                 </form>
-
+                <br>
             </div>
-            <div class="col-3">
+            <div class="col-1">
             </div>
         </div>
-                    <img src="static/images/how-it-works.pdf" id="how-it-works-img">
     </div>
 
 

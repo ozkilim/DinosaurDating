@@ -26,7 +26,7 @@ SECRET_KEY = '-*6-q2()sm(as6e*g$#jos9gvr0oxlnz*!cv*qias#*7ja^^eh'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['dinosaurdating.herokuapp.com']
+ALLOWED_HOSTS = ['dinosaurdating.herokuapp.com', '127.0.0.1' ]
 
 
 # Application definition
@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainsite',
+    'crispy_forms',
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -123,11 +125,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
 
-STATIC_ROOT = None
+
 
 STRIPE_SECRET_KEY ='sk_test_NpJoilBZRIwMP0XyDguiSQ7Q00HFuyaElD'
 STRIPE_PUBLISHABLE_KEY ='pk_test_0Z1oBwm6Jx9fJ7QuVbaO83Bf00aEvHikoH'
@@ -143,13 +142,22 @@ EMAIL_HOST_PASSWORD = 'monkey/218'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/media/'
+
+STATICFILES_DIRS = [
+
+    os.path.join(BASE_DIR, '/static/'),
+
+    os.path.join(BASE_DIR, '/media/'),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
