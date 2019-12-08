@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95324bb-2f18-4583-8d73-5dd2071994d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +140,7 @@
       <workItem from="1575793423978" duration="921000" />
       <workItem from="1575812783317" duration="1934000" />
       <workItem from="1575815005926" duration="1750000" />
+      <workItem from="1575817337948" duration="394000" />
     </task>
     <servers />
   </component>
