@@ -5,6 +5,7 @@
 
 .breadcrumb {
     background-color: blue!important;
+    margin-bottom: 0rem!important;
 }
 
 .breadcrumb-item.active{
@@ -12,11 +13,11 @@
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: deeppink!important;
+    color: blue!important;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: deeppink!important;
+    color: blue!important;
 }
 
 
@@ -24,6 +25,22 @@ h1{
     color: blue;
     text-align: center!important;
 }
+
+.ticketbutton{
+    color: deeppink!important;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+p {
+    text-align: center!important;
+}
+
+.eventquestion{
+    color: blue!important;
+
+}
+
 
 @font-face {
     font-family:'Bungee';
@@ -48,6 +65,10 @@ body{
     #wrapper{
         overflow-x: hidden;
         position: relative
+    }
+
+    .filloutdetails{
+        font-size: 20px;
     }
 
     body{

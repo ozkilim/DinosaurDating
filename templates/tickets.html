@@ -7,13 +7,9 @@
             </div>
             <div class="col-10">
                 <br>
-                {{ event_name }}
-                {{ event_date }}
-                {{ event_location }}
-
-                event pricing----->{{ event_price }}NIS
-                        <img src="static/images/{{ event.image }}">
-        <h1>fill out some quick info before you pay so we can give you the best experience at our event!</h1>
+                <p>Sign up for {{ event_name }} on {{ event_date }} at {{ event_location }}
+                    for {{ event_price }}NIS</p>
+        <h1 class="filloutdetails">fill out some quick info before you pay so we can give you the best experience at our event! Click submit to go to our pay page</h1>
                 <form action="" method="post">
                     {% csrf_token %}
                     {{ form|crispy }}

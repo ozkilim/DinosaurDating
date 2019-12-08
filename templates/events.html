@@ -10,19 +10,15 @@
                     <div id="eventbox">
                         <img src="static/images/{{ event.image }}" id="event-image">
 
-                        <h2>WHAT? {{ event.name }}</h2>
-
-                        <h2>WHEN? {{ event.date }}</h2>
-
-                        <h2>WHERE? {{ event.location }}</h2>
-                        {% load staticfiles %}
-
-                        <h2>HOW? </h2>
+                        <h2 class="eventquestion">WHAT?</h2>
+                        <h2> {{ event.name }}</h2>
+                        <h2 class="eventquestion">WHEN?</h2>
+                        <h2> {{ event.date }}</h2>
+                        <h2 class="eventquestion">WHERE?</h2>
+                        <h2> {{ event.location }}</h2>
+                        <h2 class="eventquestion">HOW?</h2>
                         <p>{{ event.description }}</p>
-
-
-                    Get your tickets her!--->
-                    <a href="/tickets/{{ event.id }}">Get tickets to {{ event.name }}</a>
+                        <a  class='ticketbutton' href="/tickets/{{ event.id }}">Get tickets to {{ event.name }} </a>
 
                     </div>
                     <br>

@@ -17,8 +17,13 @@
 </head>
 <body>
 <div id="wrapper">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Dinosaur Dating</li>
+  </ol>
+</nav>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src="static/images/logogrey.png" id="icon-img"></a>
+  <a class="navbar-brand" href="#"><img src={% static "images/logogrey.png" %} id="icon-img"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -30,11 +35,7 @@
     </div>
   </div>
 </nav>
-    <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">Dinosaur Dating</li>
-  </ol>
-</nav>
+
 {% block content %}
 {% endblock %}
 </div>
