@@ -4,6 +4,7 @@
 }
 
 .breadcrumb {
+
     background-color: blue!important;
     margin-bottom: 0rem!important;
 }
@@ -18,7 +19,9 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: blue!important;
+
 }
+
 
 
 h1{
@@ -50,13 +53,26 @@ p {
 }
 
 body{
+
     font-family:Bungee!important;
     color: deeppink!important;
-
 }
+
+#eventcontainer{
+
+     /*background: url("/static/images/Dinosaurgreenpink.jpg") 50% 0 fixed;*/
+     /*height: 650px;*/
+     /*padding:  0 0 0;*/
+}
+
 
 .asteriskField {
     display: none;
+}
+
+h3{
+        color: blue!important;
+    font-size: 15px;
 }
 
 /*mobile*/
