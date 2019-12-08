@@ -3,6 +3,23 @@
     background-color: transparent;
 }
 
+.breadcrumb {
+    background-color: blue!important;
+}
+
+.breadcrumb-item.active{
+    color: deeppink!important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: deeppink!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: deeppink!important;
+}
+
+
 h1{
     color: blue;
     text-align: center!important;
