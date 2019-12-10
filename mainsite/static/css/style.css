@@ -72,8 +72,9 @@ body{
 
 h3{
         color: blue!important;
-    font-size: 15px;
+    font-size: 15px!important;
 }
+
 
 /*mobile*/
 @media (max-width: 520px) {
@@ -85,6 +86,15 @@ h3{
 
     .filloutdetails{
         font-size: 20px;
+    }
+
+    .sorrymessage{
+        font-size: 15px!important;
+    }
+
+    .seeotherevents{
+        font-size: 50px!important;
+        text-align: center!important;
     }
 
     body{
@@ -107,7 +117,7 @@ h3{
     #speed-dating-tagline {
         text-align: center;
         font-size: 25px;
-        text-align: center;
+
     }
 
     #speed-dating-para {

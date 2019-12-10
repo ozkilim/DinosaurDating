@@ -9,7 +9,7 @@ urlpatterns = [
 	path('reserve', views.reserve, name='reserve'),
 	path('references', views.references, name='references'),
 	path('tickets/<int:id>', views.tickets, name='tickets'),
-	path('pay', views.pay.as_view(), name='pay'),
+	path(r'^pay/(?P<charge>\w+?)/$', views.pay.as_view(), name='pay'),
 	path('charge/', views.charge, name='charge'),
 
 ]

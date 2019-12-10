@@ -165,3 +165,11 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'fridgeflipapp@gmail.com'
+EMAIL_HOST_PASSWORD = 'fridgeflipadmin'
+EMAIL_USE_TLS = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'

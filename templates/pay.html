@@ -5,17 +5,17 @@
             <div class="col-1">
             </div>
             <div class="col-10">
- details here pulled through from last page...
-                last stage here!
                 <br>
 
                 <h2>Purchase your ticket</h2>
+                <h2>this event costs {{ charge }} NIS</h2>
 <form action="{% url 'mainsite:charge' %}" method="post">
   {% csrf_token %}
+    <input type="text" name="chargepass" value="{{ charge }}">
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="{{ key }}"
-          data-description="an event payed..."
-          data-amount="2000"
+          data-description="{{ event.name }}"
+          data-amount="{{ charge }}00"
           data-locale="auto"></script>
 </form>
                </div>
